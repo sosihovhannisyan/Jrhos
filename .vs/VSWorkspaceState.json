@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\src",
+    "\\src\\components",
+    "\\src\\components\\Deliver",
+    "\\src\\components\\Filter",
+    "\\src\\components\\Footer",
+    "\\src\\components\\Nav",
+    "\\src\\components\\ProductAbout",
+    "\\src\\components\\Sort",
+    "\\src\\styles"
+  ],
+  "SelectedNode": "\\src\\components\\Footer\\index.js",
+  "PreviewInSolutionExplorer": false
+}

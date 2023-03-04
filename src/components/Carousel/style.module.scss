@@ -1,0 +1,208 @@
+.carouselMain {
+    background-color: rgb(255, 255, 255, 0.9);
+    margin: 20px 5px 20px 5px;
+    border-radius: 30px;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 10px;
+
+    h2 {
+        padding-top: 20px;
+        color: #008080 !important;
+        font-size: 34px;
+        text-align: center;
+        margin: 20px;
+    }
+
+    .carousel {
+        display: flex;
+        margin: 20px;
+        align-items: center;
+        justify-content: space-around;
+
+        .carouselProducts {
+            display: flex;
+        }
+
+        .icon {
+            width: 30px;
+            height: 30px;
+        }
+
+        .product {
+            margin: 10px;
+            align-items: center;
+            text-align: center;
+            transition: 1s;
+            max-width: 300px;
+        }
+
+        img {
+            width: 300px;
+            border-radius: 50%;
+            animation-name: photo;
+            animation-duration: 2s;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes photo {
+            from {
+                border-radius: 50px;
+            }
+        }
+
+        p {
+            color: #008080;
+            margin: 5px;
+            transition: 1s;
+            animation-name: product;
+            animation-duration: 2s;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes product {
+            from {
+                color: white;
+            }
+        }
+
+        .model {
+            font-weight: bold;
+        }
+
+        .priceS {
+            display: block;
+            text-decoration: line-through 2px red;
+            font-weight: bold;
+        }
+
+        .price {
+            display: flex;
+            align-items: center;
+        }
+
+        .kod {
+            font-size: 18px;
+        }
+    }
+
+    .product:hover {
+        border-radius: 50px;
+        background-color: rgba(00,80,80, 0.9);
+        transition: 1s;
+
+        p {
+            color: white;
+            transition: 1s;
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .carouselMain {
+
+        h2 {
+            font-size: 30px;
+        }
+
+        .carousel {
+
+            .product {
+                max-width: 200px;
+
+
+                img {
+                    width: 200px;
+                }
+
+                .kod {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .carouselMain {
+
+        h2 {
+            font-size: 30px;
+        }
+
+        .carousel {
+
+            .product {
+                max-width: 150px;
+
+                img {
+                    width: 150px;
+                }
+
+                .kod {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 430px) {
+    .carouselMain {
+
+        h2 {
+            font-size: 28px;
+        }
+
+        .carousel {
+
+            .icon {
+                width: 30px;
+                height: 30px;
+            }
+
+            .product {
+                max-width: 115px;
+
+
+                img {
+                    width: 115px;
+                }
+
+                .kod {
+                    font-size: 10px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 345px) {
+    .carouselMain {
+
+        h2 {
+            font-size: 28px;
+        }
+
+        .carousel {
+
+            .icon {
+                width: 20px;
+                height: 20px;
+            }
+
+            .product {
+                max-width: 115px;
+
+
+                img {
+                    width: 115px;
+                }
+
+                .kod {
+                    font-size: 10px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,42 @@
+@import "mixin";
+
+* {
+    box-sizing: border-box;
+    justify-content: center;
+    justify-items: center;
+    font-family: Noyemi;
+    letter-spacing: 1px;
+}
+
+@font-face {
+    src: local('Noyemi'), url('./fonts/Noyemi.ttf') format( );
+    font-family: 'Noyemi';
+}
+
+h1 {
+    @include h1;
+}
+
+p {
+    @include p;
+}
+
+body {
+    margin: 0px;
+    background-color: #008080;
+}
+
+#root {
+    
+}
+
+@media only screen and (max-width: 768px) {
+
+    h1 {
+        font-size: 32px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+}

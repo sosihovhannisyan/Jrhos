@@ -1,0 +1,87 @@
+.nav1 {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    font-weight: bold;
+    background-color: white;
+    z-index: 900;
+    overflow: hidden;
+    position: fixed;
+    right: 0;
+    left: 0;
+    height: 50px;
+    font-size: 16px;
+    color: #008080;
+}
+
+.menuicon {
+    height: 30px;
+}
+
+.nav1 a, .nav a {
+    text-decoration: none;
+    color: #008080;
+    transition: 0.5s;
+}
+
+.nav1 a:active, .nav a:active {
+    color: black;
+}
+
+.nav1 a:hover, .nav a:hover {
+    color: black;
+}
+
+.nav {
+    display: grid;
+    margin-top: 50px;
+    position: fixed;
+    z-index: 999;
+    cursor: pointer;
+    background-color: rgba(00,80,80, 0.9);
+    border-radius: 30px;
+    right: 0;
+    left: 0;
+    transition: 1s;
+    padding: 10px;
+
+    a {
+        color: white;
+        transition: 0.5s;
+        padding: 15px;
+        margin: 5px;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+
+    .nav, .menuClick {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+
+    .navCenter {
+        display: none;
+    }
+
+    .nav a {
+        font-size: 16px;
+    }
+
+    .nav1 {
+        justify-content: space-between;
+        font-size: 16px;
+
+        .menuClick {
+            padding-left: 5px;
+            height: 30px;
+        }
+
+        :last-child {
+            padding-right: 5px;
+        }
+    }
+}
