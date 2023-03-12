@@ -7,10 +7,10 @@ const Data = (category) => {
 
     useEffect(() => {
         const products = () => {
-            if (category === "Ամբողջ տեսականին") {
+            if (category === "AllProducts") {
                 return AllProducts
-            } else if (category === "Ամենավաճառված") {
-                return AllProducts.filter(elm => elm.best === "Ամենավաճառված")
+            } else if (category === "BestSeller") {
+                return AllProducts.filter(elm => elm.best === "BestSeller")
             }
             return AllProducts.filter(elm => elm.category === category)
         }

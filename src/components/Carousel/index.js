@@ -8,7 +8,7 @@ import previous from './previous.png'
 export default memo(function Carousel() {
 
     const [carousel, setCarousel] = useState([])
-    const [index, setIndex] = useState("2");
+    const [index, setIndex] = useState(1);
     const length = 4;
     const navigate = useNavigate()
 

@@ -1,47 +1,47 @@
 ﻿import { memo } from "react"
 import styles from './style.module.scss'
 
-export default memo(function Filter({ onFilter1, onFilter2, onFilter3, onFilter4, onFilter5, onFilter6, onFilter7, onFilter8, onFilter9, onFilter10, onFilter11, onFilter12, onFilter13 }) {
+export default memo(function Filter({ onFilter }) {
 
     return (
         <div className={styles.filter}>
-            <button onClick={() => onFilter1()}>
+            <button onClick={() => onFilter("AllProducts")}>
                 Ամբողջ տեսականին
             </button>
-            <button onClick={() => onFilter2()} >
+            <button onClick={() => onFilter("WithPhoto")} >
                 Անհատական նկարներով
             </button>
-            <button onClick={() => onFilter3()} >
+            <button onClick={() => onFilter("Flowers")} >
                 Բնական ծաղիկներով
             </button>
-            <button onClick={() => onFilter4()}>
+            <button onClick={() => onFilter("Collections")}>
                 Փայլուն հավաքածուներ
             </button>
-            <button onClick={() => onFilter5()}>
+            <button onClick={() => onFilter("Necklaces")}>
                 Վզնոցներ
             </button>
-            <button onClick={() => onFilter6()} >
+            <button onClick={() => onFilter("Earrings")} >
                 Ականջօղեր
             </button>
-            <button onClick={() => onFilter7()} >
+            <button onClick={() => onFilter("Bracelets")} >
                 Թևնոցներ
             </button>
-            <button onClick={() => onFilter8()} >
+            <button onClick={() => onFilter("Rings")} >
                 Մատանիներ
             </button>
-            <button onClick={() => onFilter9()} >
+            <button onClick={() => onFilter("Brooch")} >
                 Կրծքազարդեր
             </button>
-            <button onClick={() => onFilter10()} >
+            <button onClick={() => onFilter("Keychains")} >
                 Բրելոկներ
             </button>
-            <button onClick={() => onFilter11()} >
+            <button onClick={() => onFilter("Headdresses")} >
                 Գլխազարդեր
             </button>
-            <button onClick={() => onFilter12()} >
+            <button onClick={() => onFilter("Belts")} >
                 Գոտիներ և շղթաներ
             </button>
-            <button onClick={() => onFilter13()} >
+            <button onClick={() => onFilter("Hats")} >
                 Գլխարկներ
             </button>
         </div>

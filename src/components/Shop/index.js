@@ -16,7 +16,7 @@ const Shop = () => {
 
     const navigate = useNavigate()
 
-    const products = Data("Ամենավաճառված")
+    const products = Data("BestSeller")
 
     return (
         <div >
